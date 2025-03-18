@@ -1,0 +1,238 @@
+/*BODY*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Calistoga&display=swap');
+body{
+    background: #111926;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    margin: 0px;
+}
+
+/*HEADER*/
+header{
+    background-color:#223040;
+    padding: 20px 0;
+   
+}
+
+header a{
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+
+}
+header div.centre{
+    display:flex;
+justify-content:space-between;
+
+}
+
+header nav{
+    display: flex;
+}
+
+header nav a{
+padding: 0 10px;
+color: rgba(255,255,255,0.6);
+
+}
+
+header a.nav-link.active{
+
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 20px;
+    white-space: nowrap;
+ 
+}
+
+ a.social-link svg{
+    fill:  rgba(255,255,255,0.6); 
+    height: 30px;
+    display: inline-block;
+
+}
+
+/*HEADER DIV*/
+.centre{
+     
+    max-width: 750px;
+    margin-left :auto;
+    margin-right: auto;
+}
+
+/*CLASS INTRO*/
+div.intro{
+  
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    
+}
+div.intro p{
+    margin: 0;
+    align-self: center;
+    
+}
+div.intro img{
+    border-radius: 9rem;
+    height: 250px;
+    margin-top: -40px;
+    size-adjust: 20px;
+   
+    
+}
+
+/*ABOUT ME (HEADING ONE) H1*/
+h1{
+    background-color:#223040;
+    font-size: 64px;
+    line-height: 60px;
+    margin: 0;
+    padding-top: 70px;
+  
+}
+
+/*FOOTER*/
+footer{
+border-top: 1.5px solid #557 ;
+display: flex;
+justify-content: space-between;
+margin-top: 50px;
+padding: 30px 0;
+
+}
+
+footer a{
+
+    text-decoration: none;
+}
+
+footer p{
+    align-self: center;
+    margin: 0;
+}
+
+/*CONTACTS*/
+div.Contacts{
+    text-align: center;
+    font-size: 20px;
+    padding: 50px 0;
+}
+.Contact-item{
+    display: flex;
+    align-items:flex-end;
+    gap: 10px;
+    color: aliceblue;
+    font-size: 16px;
+}
+.Contacts-icons svg{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    fill: white;
+    gap: 40px;
+    height: 20px; 
+    margin-top: 20px;
+    width: 30px;
+}
+/*PROJECTS*/
+.project {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the images horizontally */
+    flex-wrap: wrap; /* Allow wrapping to new lines on smaller screens */
+  }
+  
+  .coding, .programming {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .coding img, .programming img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .coding:hover img, .programming:hover img {
+    transform: translateY(-5px);
+    animation: bounce 0.5s ease;
+  }
+  
+  .coding p, .programming p {
+    margin: 5px 0;
+    padding: 5px;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+div.Projects{
+    gap: 50%;
+   
+    padding: 50px;
+}
+div.Project img{
+    max-width: 100%;
+
+}
+div.project h2{
+    text-align: center;
+}
+div.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+div.coding img{
+height: 160px;
+border: 2px solid white;
+    width: 200px;
+}
+div.programming img{
+    width: 200px;
+}
+footer a.social-link{
+    margin-left: 10px;
+}
+/*NEW*/
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro img {
+        margin-top: 20px;
+    }
+
+    .Projects {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.intro img {
+    animation: fadeIn 2s ease-in-out;
+}
